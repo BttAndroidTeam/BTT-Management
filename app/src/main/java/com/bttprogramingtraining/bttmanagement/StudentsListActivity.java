@@ -8,11 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 
-import com.baoyz.swipemenulistview.SwipeMenu;
-import com.baoyz.swipemenulistview.SwipeMenuCreator;
-import com.baoyz.swipemenulistview.SwipeMenuItem;
-import com.baoyz.swipemenulistview.SwipeMenuListView;
 import com.bttprogramingtraining.bttmanagement.adapters.StudentListAdapter;
 
 /**
@@ -21,7 +18,7 @@ import com.bttprogramingtraining.bttmanagement.adapters.StudentListAdapter;
 
 public class StudentsListActivity extends AppCompatActivity {
 
-    SwipeMenuListView lvStudents;
+    ListView lvStudents;
     FloatingActionButton fbStudents;
 
     @Override
@@ -33,22 +30,6 @@ public class StudentsListActivity extends AppCompatActivity {
         lvStudents=findViewById(R.id.lv_students);
         fbStudents=findViewById(R.id.fab);
         lvStudents.setAdapter(adapter);
-        lvStudents.setMenuCreator(new SwipeMenuCreator() {
-            @Override
-            public void create(SwipeMenu menu) {
-                SwipeMenuItem callItem=new SwipeMenuItem(getApplicationContext());
-                callItem.setWidth(180);
-                callItem.setBackground(R.drawable.calm_bg_color);
-                callItem.setIcon(R.drawable.ic_call_black_24dp);
-                menu.addMenuItem(callItem);
-                SwipeMenuItem deleteItem=new SwipeMenuItem(getApplicationContext());
-                deleteItem.setWidth(180);
-                deleteItem.setBackground(R.drawable.danger_bg_color);
-                deleteItem.setIcon(R.drawable.ic_delete_white_24dp);
-                menu.addMenuItem(deleteItem);
-            }
-        });
-        lvStudents.setSwipeDirection(SwipeMenuListView.DIRECTION_LEFT);
 
         setClickActions();
     }
