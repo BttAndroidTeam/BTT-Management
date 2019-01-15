@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_list_student"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_user_dummy"/>
+        <TextView
+            android:id="@+id/tv_list_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Htun Linn Aung"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/iv_list_student"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/tv_list_student_phno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0930518393"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_list_student_name"
+            android:layout_alignLeft="@id/tv_list_student_name"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_search_students"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:background="@drawable/grey_bg_color"
+            android:imeOptions="actionSearch"
+            android:drawableEnd="@drawable/ic_search_white_24dp" />
+
+        <ListView
+            android:id="@+id/lv_students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_search_students"
+            android:divider="#8B8B8B"
+            android:dividerHeight="4dp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_person_add_white" />
+</android.support.design.widget.CoordinatorLayout>

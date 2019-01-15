@@ -25,6 +25,7 @@
             android:label="BTT Managment"
             android:theme="@style/AppTheme.NoActionBar"/>
 
+        <activity android:name=".StudentsListActivity" android:windowSoftInputMode="stateHidden"/>
     </application>
 
 </manifest>
