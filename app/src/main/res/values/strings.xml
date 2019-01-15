@@ -4,4 +4,15 @@
     <string name="item_more">More</string>
     <string name="item_sorted_year">Sorted by Year</string>
     <string name="item_export_title">Export</string>
+    <string name="app_name">BTT Management</string>
+    <string name="textview">TextView</string>
+    <string name="hello">O4</string>
+    <string name="chk_ios">O1</string>
+    <string name="chk_android">O2</string>
+    <string name="chk_windows">O3</string>
+    <string name="btn_display">O5</string>
+    <string name="btn">O6</string>
+    <string name="pirates">Credit</string>
+    <string name="ninjas">Debit</string>
+
 </resources>

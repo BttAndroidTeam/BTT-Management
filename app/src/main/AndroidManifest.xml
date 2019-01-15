@@ -17,6 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".StudentsListActivity" android:windowSoftInputMode="stateHidden"/>
+
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="BTT Managment"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>
