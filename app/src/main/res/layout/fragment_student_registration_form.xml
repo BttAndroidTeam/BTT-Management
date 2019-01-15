@@ -1,0 +1,255 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusableInTouchMode="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <LinearLayout
+
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/hugh"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Enter Student Register"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        ​
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            ​
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/pro_icn"
+                android:backgroundTint="#0bcce6"
+                android:textIsSelectable="false" />
+            ​
+            ​
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:textSize="13dp" />
+            ​
+
+            ​
+        </LinearLayout>
+        ​
+        ​
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            ​
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/phone_ic"
+                android:backgroundTint="#0bcce6"
+                android:textIsSelectable="false" />
+            ​
+
+
+            <EditText
+                android:id="@+id/edtPhno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Phone No."
+                android:inputType="number|phone"
+                android:maxLines="1"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:textSize="13dp" />
+            ​
+
+            ​
+        </LinearLayout>
+        ​
+        ​
+        ​
+        ​
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            ​
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/ic_contact_phone_black_24dp"
+                android:backgroundTint="#0bcce6"
+                android:textIsSelectable="false" />
+            ​
+
+            ​
+
+
+            <EditText
+                android:id="@+id/edtRollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Guardian Phno"
+                android:inputType="number|phone"
+                android:maxLines="1"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:textSize="13dp" />
+            ​
+
+            ​
+            ​
+        </LinearLayout>
+        ​
+        ​
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            ​
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/email_ic"
+                android:backgroundTint="#0bcce6"
+                android:textIsSelectable="false" />
+            ​
+            ​
+
+            ​
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingBottom="20dp"
+                android:singleLine="true"
+                android:textSize="13dp" />
+            ​
+        </LinearLayout>
+        ​
+        ​
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            ​
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/add_ic"
+                android:backgroundTint="#0bcce6"
+                android:textIsSelectable="false" />
+            ​
+
+
+            ​
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Address"
+                android:inputType="textEmailAddress|text|textPostalAddress"
+                android:maxLines="3"
+                android:paddingBottom="20dp"
+                android:singleLine="false"
+                android:textSize="13dp" />
+            ​
+
+            ​
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnReg"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:background="@drawable/gradientbuttonstyle"
+                android:text="Save"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+        </LinearLayout>
+        ​
+    </LinearLayout>
+</ScrollView>
+
+
+
+
