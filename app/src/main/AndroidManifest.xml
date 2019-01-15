@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,10 +23,12 @@
 
         <activity
             android:name=".RegistrationActivity"
+            android:name=".ui.activity.RegistrationActivity"
             android:label="BTT Managment"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity android:name=".StudentsListActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ui.activity.StudentsListActivity" android:windowSoftInputMode="stateHidden"/>
     </application>
 
 </manifest>
