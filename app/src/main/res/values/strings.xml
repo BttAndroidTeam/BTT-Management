@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BttManagement</string>
+    <string name="item_search_title">Search</string>
+    <string name="item_more">More</string>
+    <string name="item_sorted_year">Sorted by Year</string>
+    <string name="item_export_title">Export</string>
 </resources>
